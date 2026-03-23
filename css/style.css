@@ -37,7 +37,11 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(0,255,136,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(0,212,255,0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(168,85,247,0.03) 0%, transparent 50%),
+    #0a0d0f;
   color: var(--text);
   font-family: var(--font-mono);
   line-height: 1.7;
