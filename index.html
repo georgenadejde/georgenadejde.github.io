@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George Nădejde · Cyber Security</title>
+  <meta name="description" content="Aspiring Cyber Security Professional — George Nădejde. MSc Cyber Security at Radboud University. Penetration testing, reverse engineering, forensics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Scanline overlay -->
+<div class="scanlines"></div>
+
+<!-- Background grid -->
+<div class="bg-grid"></div>
+
+<!-- Floating particles -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="prompt">~/george</span><span class="cursor-blink">_</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link"><span class="cmd-prefix">./</span>about</a></li>
+      <li><a href="#experience" class="nav-link"><span class="cmd-prefix">./</span>experience</a></li>
+      <li><a href="#skills" class="nav-link"><span class="cmd-prefix">./</span>skills</a></li>
+      <li><a href="#education" class="nav-link"><span class="cmd-prefix">./</span>education</a></li>
+      <li><a href="#contact" class="nav-link"><span class="cmd-prefix">./</span>contact</a></li>
+      <li><a href="resume.pdf" class="nav-cta" target="_blank" download>resume.pdf</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-terminal">
+    <div class="terminal-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="terminal-title">george@kali:~$</span>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-line" data-delay="0">
+        <span class="t-prompt">george@kali:~$</span>
+        <span class="t-cmd typewriter" data-text="whoami"></span>
+      </div>
+      <div class="terminal-output" data-delay="800">
+        <p class="hero-name">George Nădejde</p>
+        <p class="hero-title">Aspiring Cyber Security Professional</p>
+      </div>
+      <div class="terminal-line" data-delay="1200">
+        <span class="t-prompt">george@kali:~$</span>
+        <span class="t-cmd typewriter" data-text="cat mission.txt"></span>
+      </div>
+      <div class="terminal-output" data-delay="2100">
+        <p class="hero-quote">"Protecting the Digital World — One System at a Time"</p>
+      </div>
+      <div class="terminal-line" data-delay="2600">
+        <span class="t-prompt">george@kali:~$</span>
+        <span class="t-cmd typewriter" data-text="locate --me"></span>
+      </div>
+      <div class="terminal-output" data-delay="3400">
+        <p><span class="t-key">location</span> <span class="t-val">Nijmegen, Netherlands</span></p>
+        <p><span class="t-key">status  </span> <span class="t-val status-open">OPEN TO OPPORTUNITIES</span></p>
+        <p><span class="t-key">current </span> <span class="t-val">MSc Cyber Security @ Radboud University</span></p>
+      </div>
+      <div class="terminal-line blink-line" data-delay="3900">
+        <span class="t-prompt">george@kali:~$</span>
+        <span class="cursor-blink">█</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-cta" data-delay="4200">
+    <a href="#about" class="btn-primary">Explore Profile</a>
+    <a href="#contact" class="btn-ghost">Get In Touch</a>
+  </div>
+  <div class="scroll-indicator">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">$ cat about.md</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Diligent and ambitious cyber security professional eager to learn how systems work and interact with each other. I tackle challenges with <span class="highlight">curiosity</span> and a <span class="highlight">problem-solving mindset</span>, continuously seeking innovative solutions and growth opportunities.</p>
+        <p>My passion for cyber security inspires me to explore new ways of securing our digital environment through platforms such as <a href="https://tryhackme.com" target="_blank" class="inline-link">TryHackMe</a> and <a href="https://hackthebox.com" target="_blank" class="inline-link">Hack The Box</a>.</p>
+        <p>I'm now looking for my next challenge — waiting impatiently to hack my way into a new role where I can prove my skills and knowledge.</p>
+        <div class="about-badges">
+          <span class="badge">🔐 Penetration Testing</span>
+          <span class="badge">🔬 Reverse Engineering</span>
+          <span class="badge">🧬 Digital Forensics</span>
+          <span class="badge">🛡️ Hardware Security</span>
+          <span class="badge">🌐 Network Security</span>
+          <span class="badge">🔑 Cryptography</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num" data-target="8.00">0</span>
+          <span class="stat-denom">/10</span>
+          <span class="stat-label">BSc GPA<br><small>Cum Laude</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num count-int" data-target="3">0</span>
+          <span class="stat-label">Years of<br>Teaching</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num count-int" data-target="8">0</span>
+          <span class="stat-label">Courses<br>Assisted</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num count-int" data-target="2">0</span>
+          <span class="stat-label">Research<br>Projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">$ ls -la ./experience/</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">Sept 2025 – Feb 2026</span>
+            <span class="timeline-loc">📍 The Hague, Netherlands</span>
+          </div>
+          <h3 class="timeline-role">Intern — Digital & Biometric Traces</h3>
+          <a href="https://www.forensischinstituut.nl/" target="_blank" class="timeline-org">Netherlands Forensic Institute (NFI)</a>
+          <p class="timeline-desc">Investigated what relevant digital information is left in vehicle infotainment systems as a result of using Android Auto or Apple CarPlay. Combined automotive security knowledge with forensic analysis techniques.</p>
+          <div class="timeline-tags">
+            <span class="tag">Automotive Security</span>
+            <span class="tag">Reverse Engineering</span>
+            <span class="tag">Ghidra</span>
+            <span class="tag">Frida</span>
+            <span class="tag">Digital Forensics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">Sept 2022 – Jan 2026</span>
+            <span class="timeline-loc">📍 Nijmegen, Netherlands</span>
+          </div>
+          <h3 class="timeline-role">Student Assistant</h3>
+          <a href="https://www.ru.nl/" target="_blank" class="timeline-org">Radboud University</a>
+          <p class="timeline-desc">Appointed by course coordinators to conduct weekly working groups, grade assignments and provide constructive feedback. Supported students across a wide range of computer science courses.</p>
+          <div class="timeline-courses">
+            <span class="course-pill">Operating Systems Security</span>
+            <span class="course-pill">Networks and Security</span>
+            <span class="course-pill">Matrix Calculation</span>
+            <span class="course-pill">Processors</span>
+            <span class="course-pill">Information Modelling & Databases</span>
+            <span class="course-pill">Calculus & Probability</span>
+            <span class="course-pill">OOP</span>
+            <span class="course-pill">Complexity</span>
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">Mentorship</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Time Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">Jan 2024 – June 2024</span>
+            <span class="timeline-loc">📍 Netherlands</span>
+          </div>
+          <h3 class="timeline-role">Software Engineer</h3>
+          <a href="https://giphouse.nl/" target="_blank" class="timeline-org">GipHouse</a>
+          <p class="timeline-desc">Designed and improved the <a href="https://edufort.nl" target="_blank" class="inline-link">Edufort</a> privacy portal using Symfony and PHP, adhering to SCRUM principles. Responsible for Continuous Integration via GitHub Actions and implementing a dynamic dashboard connecting front-end data graphs to the database — enabling real-time, interactive visualizations of each user's privacy situation.</p>
+          <div class="timeline-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">Symfony</span>
+            <span class="tag">SCRUM</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">$ nmap --skills george.nadejde</span>
+      <h2 class="section-title">Skills & Arsenal</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-icon">⚔️</span>
+          <h3>Penetration Testing</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-name">Metasploit</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Wireshark</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">BurpSuite</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Nmap</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Ghidra</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Frida</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-icon">💻</span>
+          <h3>Programming</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">C / C++</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Assembly</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Bash / PowerShell</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-icon">🌐</span>
+          <h3>Web Development</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-name">HTML / CSS / JS</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">PHP / Symfony</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">NodeJS</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <span class="skill-icon">🚀</span>
+          <h3>DevOps & Cloud</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">GitHub Actions</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certifications -->
+    <div class="certs-section">
+      <h3 class="certs-title">Certifications</h3>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-icon">🎯</div>
+          <div class="cert-info">
+            <h4>Pre Security Learning Path</h4>
+            <span class="cert-issuer">TryHackMe</span>
+            <p>Foundational cyber security concepts, tools and techniques.</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🐧</div>
+          <div class="cert-info">
+            <h4>Linux Unhatched</h4>
+            <span class="cert-issuer">Cisco Networking Academy</span>
+            <p>Foundational command-line skills and core knowledge of the Linux operating system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">$ grep -r "education" ./george.json</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card featured">
+        <div class="edu-badge">MSc</div>
+        <div class="edu-content">
+          <span class="edu-status">🟢 Ongoing</span>
+          <h3>MSc in Cyber Security</h3>
+          <a href="https://www.ru.nl/" target="_blank" class="edu-uni">Radboud University</a>
+          <span class="edu-date">2024 – Present · Nijmegen, Netherlands</span>
+          <div class="edu-modules">
+            <span class="module">Hardware Security</span>
+            <span class="module">Network Security</span>
+            <span class="module">Reverse Engineering</span>
+            <span class="module">Side Channel Analysis</span>
+          </div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-badge">BSc</div>
+        <div class="edu-content">
+          <span class="edu-status">✅ Completed</span>
+          <h3>BSc in Computing Science</h3>
+          <a href="https://www.ru.nl/" target="_blank" class="edu-uni">Radboud University</a>
+          <span class="edu-date">2021 – 2024 · Nijmegen, Netherlands</span>
+          <div class="edu-gpa">
+            <span class="gpa-label">GPA</span>
+            <span class="gpa-value">8.00 / 10</span>
+            <span class="gpa-honors">Cum Laude 🏆</span>
+          </div>
+          <div class="edu-thesis">
+            <span class="thesis-label">Thesis</span>
+            <p>Optimized <em>AprèsSQI</em> — a NIST candidate for post-quantum signature standardization, by designing a more precise cost model for verification.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="languages-section">
+      <h3 class="lang-title">Languages</h3>
+      <div class="lang-grid">
+        <div class="lang-item">
+          <span class="lang-flag">🇷🇴</span>
+          <span class="lang-name">Romanian</span>
+          <div class="lang-dots">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span>
+          </div>
+          <span class="lang-level">Native</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-flag">🇬🇧</span>
+          <span class="lang-name">English</span>
+          <div class="lang-dots">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span>
+          </div>
+          <span class="lang-level">Fluent</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-flag">🇫🇷</span>
+          <span class="lang-name">French</span>
+          <div class="lang-dots">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span><span class="lang-dot"></span><span class="lang-dot"></span>
+          </div>
+          <span class="lang-level">Basic</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">$ ssh george@nadejde.dev</span>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-intro">I'm actively looking for new opportunities in cyber security. Whether you have a position, a project, or just want to connect — my inbox is always open.</p>
+        <div class="contact-links">
+          <a href="mailto:george.nadejde@hotmail.com" class="contact-link">
+            <span class="contact-link-icon">📧</span>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">george.nadejde@hotmail.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/george-nadejde" target="_blank" class="contact-link">
+            <span class="contact-link-icon">💼</span>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-val">linkedin.com/in/george-nadejde</span>
+            </div>
+          </a>
+          <a href="https://github.com/georgenadejde" target="_blank" class="contact-link">
+            <span class="contact-link-icon">🐙</span>
+            <div>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-val">github.com/georgenadejde</span>
+            </div>
+          </a>
+          <a href="tel:+31613059271" class="contact-link">
+            <span class="contact-link-icon">📱</span>
+            <div>
+              <span class="contact-link-label">Phone</span>
+              <span class="contact-link-val">+31 6 130 59271</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-terminal">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">send_message.sh</span>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label class="form-label">$ name:</label>
+            <input type="text" name="name" class="form-input" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">$ email:</label>
+            <input type="email" name="email" class="form-input" placeholder="john@company.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">$ subject:</label>
+            <input type="text" name="subject" class="form-input" placeholder="Opportunity at Acme Corp" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">$ message:</label>
+            <textarea name="message" class="form-input form-textarea" placeholder="Hi George, I'd like to..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">
+            <span>./send_message</span>
+            <span class="send-arrow">→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="footer-inner">
+    <p class="footer-text">
+      <span class="prompt">george@kali:~$</span> echo "Designed & built by George Nădejde · 2025"
+    </p>
+    <div class="footer-links">
+      <a href="https://github.com/georgenadejde" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/george-nadejde" target="_blank">LinkedIn</a>
+      <a href="mailto:george.nadejde@hotmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
