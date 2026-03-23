@@ -33,6 +33,7 @@
       <li><a href="#about" class="nav-link"><span class="cmd-prefix">./</span>about</a></li>
       <li><a href="#experience" class="nav-link"><span class="cmd-prefix">./</span>experience</a></li>
       <li><a href="#skills" class="nav-link"><span class="cmd-prefix">./</span>skills</a></li>
+      <li><a href="#projects" class="nav-link"><span class="cmd-prefix">./</span>projects</a></li>
       <li><a href="#education" class="nav-link"><span class="cmd-prefix">./</span>education</a></li>
       <li><a href="#contact" class="nav-link"><span class="cmd-prefix">./</span>contact</a></li>
       <li><a href="resume.pdf" class="nav-cta" target="_blank" download>resume.pdf</a></li>
@@ -55,8 +56,16 @@
         <span class="t-cmd typewriter" data-text="whoami"></span>
       </div>
       <div class="terminal-output" data-delay="800">
-        <p class="hero-name">George Nădejde</p>
-        <p class="hero-title">Aspiring Cyber Security Professional</p>
+        <!-- generate ascii art 
+         using https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type+Something+&x=none&v=4&h=4&w=80&we=false -->
+     <pre class="hero-ascii">
+   ____                             _   _           _       _     _      
+  / ___| ___  ___  _ __ __ _  ___  | \ | | __ _  __| | ___ (_) __| | ___ 
+ | |  _ / _ \/ _ \| '__/ _` |/ _ \ |  \| |/ _` |/ _` |/ _ \| |/ _` |/ _ \
+ | |_| |  __/ (_) | | | (_| |  __/ | |\  | (_| | (_| |  __/| | (_| |  __/
+  \____|\___|\___/|_|  \__, |\___| |_| \_|\__,_|\__,_|\___|/ |\__,_|\___|
+                       |___/                             |__/            </pre>
+        <p class="hero-title">Cyber Security Professional</p>
       </div>
       <div class="terminal-line" data-delay="1200">
         <span class="t-prompt">george@kali:~$</span>
@@ -306,6 +315,98 @@
   </div>
 </section>
 
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">$ git clone --writeups george@github</span>
+      <h2 class="section-title">Projects & Writeups</h2>
+    </div>
+    <p class="projects-intro">A collection of hands-on security work — CTF writeups, lab walkthroughs, and research notes organised by platform. Each entry documents my methodology, tools used, and key takeaways.</p>
+    <div class="projects-grid">
+
+      <a href="https://github.com/georgenadejde/tryhackme-writeups" target="_blank" class="project-card">
+        <div class="project-card-top">
+          <div class="project-platform-icon">
+            <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" onerror="this.style.display='none'" />
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-title">TryHackMe Writeups</h3>
+        <p class="project-desc">Room walkthroughs covering web exploitation, privilege escalation, forensics, reverse engineering and more. Each writeup documents the full attack chain with annotated screenshots.</p>
+        <div class="project-tags">
+          <span class="tag">Web</span>
+          <span class="tag">Forensics</span>
+          <span class="tag">Privesc</span>
+          <span class="tag">Reverse Engineering</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-platform thm">TryHackMe</span>
+          <span class="project-link">View Repo →</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/georgenadejde/htb-writeups" target="_blank" class="project-card">
+        <div class="project-card-top">
+          <div class="project-platform-icon">
+            <img src="https://academy.hackthebox.com/favicon.ico" alt="HackTheBox" onerror="this.style.display='none'" />
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-title">HackTheBox Academy</h3>
+        <p class="project-desc">Module notes and lab writeups from HTB Academy, covering network security, active directory attacks, and web application penetration testing fundamentals.</p>
+        <div class="project-tags">
+          <span class="tag">Active Directory</span>
+          <span class="tag">Network</span>
+          <span class="tag">Web App</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-platform htb">HackTheBox</span>
+          <span class="project-link">View Repo →</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/georgenadejde/bandit-writeups" target="_blank" class="project-card">
+        <div class="project-card-top">
+          <div class="project-platform-icon">🐧</div>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-title">Bandit / OverTheWire</h3>
+        <p class="project-desc">Solutions and notes for the Bandit wargame — a Linux command-line challenge series covering file system navigation, process management, networking and cryptography basics.</p>
+        <div class="project-tags">
+          <span class="tag">Linux</span>
+          <span class="tag">CLI</span>
+          <span class="tag">Cryptography</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-platform otw">OverTheWire</span>
+          <span class="project-link">View Repo →</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/georgenadejde/ine-writeups" target="_blank" class="project-card">
+        <div class="project-card-top">
+          <div class="project-platform-icon">🎓</div>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-title">INE / eLearnSecurity</h3>
+        <p class="project-desc">Course notes and lab writeups from INE's security learning paths, focused on penetration testing methodology and network exploitation techniques.</p>
+        <div class="project-tags">
+          <span class="tag">Pentesting</span>
+          <span class="tag">Network</span>
+          <span class="tag">Exploitation</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-platform ine">INE</span>
+          <span class="project-link">View Repo →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 <!-- ===== EDUCATION ===== -->
 <section id="education" class="section section-dark">
   <div class="container">
@@ -348,37 +449,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Languages -->
-    <div class="languages-section">
-      <h3 class="lang-title">Languages</h3>
-      <div class="lang-grid">
-        <div class="lang-item">
-          <span class="lang-flag">🇷🇴</span>
-          <span class="lang-name">Romanian</span>
-          <div class="lang-dots">
-            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span>
-          </div>
-          <span class="lang-level">Native</span>
-        </div>
-        <div class="lang-item">
-          <span class="lang-flag">🇬🇧</span>
-          <span class="lang-name">English</span>
-          <div class="lang-dots">
-            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span>
-          </div>
-          <span class="lang-level">Fluent</span>
-        </div>
-        <div class="lang-item">
-          <span class="lang-flag">🇫🇷</span>
-          <span class="lang-name">French</span>
-          <div class="lang-dots">
-            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span><span class="lang-dot"></span><span class="lang-dot"></span>
-          </div>
-          <span class="lang-level">Basic</span>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -412,13 +482,6 @@
             <div>
               <span class="contact-link-label">GitHub</span>
               <span class="contact-link-val">github.com/georgenadejde</span>
-            </div>
-          </a>
-          <a href="tel:+31613059271" class="contact-link">
-            <span class="contact-link-icon">📱</span>
-            <div>
-              <span class="contact-link-label">Phone</span>
-              <span class="contact-link-val">+31 6 130 59271</span>
             </div>
           </a>
         </div>
