@@ -74,7 +74,6 @@ I actively sharpen my skills through platforms like TryHackMe and Hack The Box, 
 ├── js/
 │   └── main.js             # Animations, particles, typewriter effect
 ├── assets/                 # Images and icons
-├── resume.pdf              # CV download
 └── .github/
     └── workflows/
         └── deploy.yml      # Auto-deploy to GitHub Pages on push
