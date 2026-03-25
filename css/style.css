@@ -30,7 +30,7 @@
 
 /* ---- Reset ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 20px; }
 body {
   background:
     /* background light */
@@ -135,7 +135,7 @@ nav, section, footer { position: relative; z-index: 2; }
   text-align: center;
 }
 .hero-terminal {
-  width: 100%; max-width: 700px;
+  width: 100%; max-width: 860px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -157,7 +157,7 @@ nav, section, footer { position: relative; z-index: 2; }
   margin-left: auto; font-size: 0.75rem;
   color: var(--text-dim); font-family: var(--font-mono);
 }
-.terminal-body { padding: 1.5rem 2rem; min-height: 260px; }
+.terminal-body { padding: 2.5rem 2rem; min-height: 260px; }
 .terminal-line {
   display: flex; align-items: center; gap: 0.5rem;
   margin-bottom: 0.4rem;
@@ -251,7 +251,7 @@ nav, section, footer { position: relative; z-index: 2; }
 }
 
 /* ---- Sections ---- */
-.section { padding: 6rem 2rem; }
+.section { padding: 4rem 3rem; }
 /* Fade section */
 .section-dark {
   background: linear-gradient(
@@ -262,7 +262,7 @@ nav, section, footer { position: relative; z-index: 2; }
     transparent 100%
   );
 }
-.container { max-width: 1100px; margin: 0 auto; }
+.container { max-width: 1400px; margin: 0 auto; }
 .section-header { margin-bottom: 3rem; }
 .section-tag {
   font-family: var(--font-mono); font-size: 0.8rem;
