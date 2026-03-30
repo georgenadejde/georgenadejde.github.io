@@ -546,26 +546,25 @@
           <span class="dot dot-green"></span>
           <span class="terminal-title">send_message.sh</span>
         </div>
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mnjodbwo" method="POST">
           <div class="form-group">
             <label class="form-label">$ name:</label>
-            <input type="text" name="name" class="form-input" placeholder="John Doe" required />
+            <input type="text" name="name" class="form-input" placeholder="$(whoami)" required />
           </div>
           <div class="form-group">
             <label class="form-label">$ email:</label>
-            <input type="email" name="email" class="form-input" placeholder="john@company.com" required />
+            <input type="email" name="email" class="form-input" placeholder="root@localhost.com" required />
           </div>
           <div class="form-group">
             <label class="form-label">$ subject:</label>
-            <input type="text" name="subject" class="form-input" placeholder="Opportunity at Acme Corp" required />
+            <input type="text" name="subject" class="form-input" placeholder="--priority=CRITICAL" required />
           </div>
           <div class="form-group">
             <label class="form-label">$ message:</label>
-            <textarea name="message" class="form-input form-textarea" placeholder="Hi George, I'd like to..." rows="4" required></textarea>
+            <textarea name="message" class="form-input form-textarea" placeholder="GET /hire-me HTTP/1.1..." rows="4" required></textarea>
           </div>
           <button type="submit" class="btn-primary form-submit">
-            <span>./send_message</span>
-            <span class="send-arrow">→</span>
+            <span>./send_message --verbose </span>
           </button>
         </form>
       </div>
