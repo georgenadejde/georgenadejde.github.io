@@ -622,7 +622,7 @@ nav, section, footer { position: relative; z-index: 2; }
 .project-platform.thm { color: #1db954; background: rgba(29,185,84,0.1); border: 1px solid rgba(29,185,84,0.25); }
 .project-platform.htb { color: #9fef00; background: rgba(159,239,0,0.1); border: 1px solid rgba(159,239,0,0.25); }
 .project-platform.otw { color: var(--cyan); background: rgba(0,212,255,0.1); border: 1px solid rgba(0,212,255,0.25); }
-.project-platform.ine { color: var(--purple); background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.25); }
+.project-platform.ru { color: var(--purple); background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.25); }
 .project-link {
   font-size: 0.78rem; color: var(--green);
   transition: var(--transition);
